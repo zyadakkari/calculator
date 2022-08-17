@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+
+}
+
+.calcoutline {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #1C1C1C;
+    width: 33%;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.calcscreen{
+    display: flex;
+    padding: 5%;
+    background-color: #1C1C1C;
+    color: white;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.numbers {
+
+}
+.operators {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+button {
+    padding: 5%;
+    width: 30%;
+    border: none;
+    background: none;
+}
+.numbers button {
+    background-color: #D4D4D2;
+}
+.operators button {
+    width: 50%;
+    background-color: #FF9500;
+}
+
+button.equals  {
+    width: 100%;
+}
