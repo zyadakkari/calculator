@@ -10,25 +10,25 @@
             <div class="calcscreen"></div>
             <div class="buttons">
                 <div class="numbers">
-                    <button class="one" id="num" onclick="showNumber('1')">1</button>
-                    <button class="two" id="num" onclick="showNumber('2')">2</button>
-                    <button class="three" onclick="showNumber('3')">3</button>
-                    <button class="four" onclick="showNumber('4')">4</button>
-                    <button class="five" onclick="showNumber('5')">5</button>
-                    <button class="six" onclick="showNumber('6')">6</button>
-                    <button class="seven" onclick="showNumber('7')">7</button>
-                    <button class="eight" onclick="showNumber('8')">8</button>
-                    <button class="nine" onclick="showNumber('9')">9</button>
-                    <button class="zero" onclick="showNumber('0')">0</button>
-                    <button class="decimal" onclick="showNumber('.')">.</button>
-                    <button class="clear" onclick="showNumber('')">C</button>
+                    <button class="one" id="num" onclick="clickNumber('1')">1</button>
+                    <button class="two" id="num" onclick="clickNumber('2')">2</button>
+                    <button class="three" onclick="clickNumber('3')">3</button>
+                    <button class="four" onclick="clickNumber('4')">4</button>
+                    <button class="five" onclick="clickNumber('5')">5</button>
+                    <button class="six" onclick="clickNumber('6')">6</button>
+                    <button class="seven" onclick="clickNumber('7')">7</button>
+                    <button class="eight" onclick="clickNumber('8')">8</button>
+                    <button class="nine" onclick="clickNumber('9')">9</button>
+                    <button class="zero" onclick="clickNumber('0')">0</button>
+                    <button class="decimal" onclick="clickNumber('.')">.</button>
+                    <button class="clear" id="clear" onclick="clickOperator('')">C</button>
                 </div>
                 <div class="operators">
-                    <button class="add" onclick="playOperator('+')">+</button>
-                    <button class="minus" onclick="playOperator('-')">-</button>
-                    <button class="divide" onclick="playOperator('/')">÷</button>
-                    <button class="multiply" onclick="playOperator('*')">×</button>
-                    <button class="equals" onclick="operate()" >=</button>
+                    <button class="add" onclick="clickOperator('+')">+</button>
+                    <button class="minus" onclick="clickOperator('-')">-</button>
+                    <button class="divide" onclick="clickOperator('/')">÷</button>
+                    <button class="multiply" onclick="clickOperator('*')">×</button>
+                    <button class="equals" id="equals" >=</button>
                 </div>
 
             </div>
