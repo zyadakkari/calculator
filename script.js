@@ -17,6 +17,7 @@ function clickNumber(number){
 }
 // gets operator input
 function clickOperator(type){
+    // checks if consecutive operation or first
     if (number1 === null){
         number1 = document.querySelector('.calcscreen').textContent;
         operator = type;
@@ -27,17 +28,11 @@ function clickOperator(type){
         document.querySelector('.calcscreen').textContent = result;
         opClicked = true;
         operator = type;
-
     }
 
-
-
-//     if (opClicked != true){
-//         opClicked = true;
-//     }
 }
 
-
+// clear button to wipe all data
 const clear = document.querySelector('#clear');
 clear.addEventListener("click", clearAll)
 
@@ -50,19 +45,25 @@ function clearAll(){
 
 }
 
+// equals button programming to define num2 and call operate
 const equals = document.querySelector('#equals');
 equals.addEventListener("click", calculate)
 
 function calculate(){
-    number2 = document.querySelector('.calcscreen').textContent;
-    let result = operate(operator, number1, number2);
-    number1 = result;
-    number2 = null;
-    document.querySelector('.calcscreen').textContent = result
-    console.log(result)
-    opClicked = false;
+    if (number1 === null){
+        return;
+    } else {
+        number2 = document.querySelector('.calcscreen').textContent;
+        let result = operate(operator, number1, number2);
+        number1 = result;
+        number2 = null;
+        document.querySelector('.calcscreen').textContent = result
+        console.log(result)
+        opClicked = false;
+    }
 }
 
+// conducts calculation
 function operate(operator, num1, num2){
     if (operator === "+"){
         console.log(num1, num2)
