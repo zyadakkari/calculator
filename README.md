@@ -7,11 +7,16 @@ v4. fixed consecutive operations bug
 
 
 Bugs remaining:
-- dividing by 0
-- two decimals in same number
+
 
 
 Pipeline features:
-- backspace support
+
 - keyboard support
 - beautification
+
+
+Completed:
+- backspace support
+- dividing by 0
+- two decimals in same number
