@@ -51,6 +51,11 @@ button {
     background-color: #FF9500;
 }
 
+button.backspace {
+    font-size: 50%;
+    width: 100%;
+}
+
 button.equals  {
     width: 100%;
 }
