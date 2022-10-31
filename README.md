@@ -1,4 +1,7 @@
-# calculator
+# *TOP FOUNDATIONS: Calculator*
+
+https://www.theodinproject.com/lessons/foundations-calculator
+
 This is an onscreen calculator created using HTML, CSS & Javascript
 v1. calculator skeleton
 v2. basic programming, bugs with display and consecutive operations
